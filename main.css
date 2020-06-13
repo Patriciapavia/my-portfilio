@@ -137,9 +137,9 @@ li {
 
 .top-nav.open {
   top: 0;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
-  padding: 3rem;
+  border-bottom-left-radius: 150%;
+  border-bottom-right-radius: 0%;
+  padding-left: 15rem;
 }
 .menu-toggler {
   position: absolute;
@@ -516,6 +516,28 @@ li {
 /*Start media queries*/
 
 @media screen and (max-width: 768px) {
+  .nav-link {
+    font-family: "Dancing Script", cursive, sans-serif;
+    font-size: 4rem;
+    line-height: 50px;
+    padding-bottom: 4rem;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    background: linear-gradient(to top, #ffe838, #ea4c89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .top-nav.open {
+    top: 0;
+    left: 55%;
+    border-bottom-left-radius: 150%;
+    border-bottom-right-radius: 0%;
+    padding-left: 15rem;
+  }
+
   .landing-text h1 {
     font-size: 10rem;
   }
@@ -550,19 +572,35 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-  .menu-toggler {
-    top: 2rem;
-    right: 2rem;
+  section {
+    padding: 0;
   }
-  .landing-text h1 {
-    font-size: 8rem;
+  li {
+    margin: 0 2rem;
   }
-  .landing-text h6 {
-    font-size: 1.4rem;
-  }
+
   .nav-link {
-    font-size: 3.5rem;
+    font-family: "Dancing Script", cursive, sans-serif;
+    font-size: 4rem;
+    line-height: 50px;
+    padding-bottom: 4rem;
   }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    background: linear-gradient(to top, #ffe838, #ea4c89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .top-nav.open {
+    top: 0;
+    left: 30%;
+    border-bottom-left-radius: 150%;
+    border-bottom-right-radius: 0%;
+    padding-left: 15rem;
+  }
+
   .about .container {
     flex-direction: column;
   }
