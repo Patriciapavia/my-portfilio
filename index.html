@@ -48,9 +48,11 @@
       </nav>
 
       <div class="landing-text">
-        <h1>Patricia pavia</h1>
-        <h6>Full stack web developer</h6>
-        <p>
+        <h1 data-aos="fade-right" data-aos-delay="100">Patricia pavia</h1>
+        <h6 data-aos="fade-left" data-aos-delay="100">
+          Full stack web developer
+        </h6>
+        <p data-aos="fade-top" data-aos-delay="300">
           I design and code beautifully simple things, and I love what I do.
         </p>
       </div>
@@ -58,10 +60,12 @@
 
     <section class="about" id="about">
       <div class="container">
-        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-          <img src="images/my-img1.png" alt="" style="width: 400px;" />
-        </div>
-        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+        <div
+          class="profile-img"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        ></div>
+        <div class="about-details" data-aos="fade-left" data-aos-delay="200">
           <div class="about-heading">
             <h1>About</h1>
             <h6>Myself</h6>
@@ -91,9 +95,11 @@
       <div class="conainer">
         <div class="section-heading">
           <h1>Services</h1>
+          <br />
+          <br />
           <div class="skills">
-            <div class="my-skill">
-              <h1>Front-Back-End Web Developer</h1>
+            <div class="my-skill" data-aos="fade-right" data-aos-delay="100">
+              <h6>Full Stack Web Developer</h6>
               <br />
               <br />
               <p>
@@ -118,100 +124,99 @@
       </div>
     </section>
     <section class="portfolio" id="portfolio">
-      <div class="tab">
-        <button class="tablinks" onclick="openTap(event, 'html')">
-          HTML/CSS
-        </button>
-        <button class="tablinks" onclick="openTap(event, 'ruby')">
-          Ruby on rails
-        </button>
-        <button class="tablinks" onclick="openTap(event, 'js')">
-          javascrips
-        </button>
-      </div>
-
-      <div id="html" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-      </div>
-
-      <div id="ruby" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-      </div>
-
-      <div id="js" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-
       <div class="conainer">
         <div class="section-heading">
           <h1>Portfolio</h1>
-          <h6>view some of my recent work</h6>
+          <h6>view some of my recent works</h6>
         </div>
-        <div class="portfolio-item">
-          <div
-            class="portfolio-img has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <img src="images/portitem1.jpeg" alt="" />
-          </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
-            <h6>Web Development</h6>
-            <h1>Blog Website</h1>
-            <p>
-              Lorem Ipsum: usage Lorem ipsum is a pseudo-Latin text used in web
-              design, typography, layout, and printing in place
-            </p>
-            <a href="#" class="cta">view details</a>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="900"
-          >
-            <h6>Web Design</h6>
-            <h1>Product Layout</h1>
-            <p>
-              Lorem Ipsum: usage Lorem ipsum is a pseudo-Latin text used in web
-              design, typography, layout, and printing in place
-            </p>
-            <a href="#" class="cta">view details</a>
-          </div>
-          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
-            <img src="images/portitem2.jpeg" alt="" />
+        <div class="container has-margin-bottom">
+          <div class="portfolio-item">
+            <div
+              class="portfolio-img has-margin-right"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <img src="images/hotel-booking.png" alt="" />
+            </div>
+            <div
+              class="portfolio-description"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <h1>HTML/CSS</h1>
+              <h1>Hotel Booking Website</h1>
+              <p>
+                Built a responsive hotel booking website from scratch with HTML,
+                CSS.
+              </p>
+              <a
+                href="https://patriciapavia.github.io/hotel-booking-website/ "
+                target="_blank"
+                class="btn cta"
+                >View Details
+                <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="portfolio-item">
-          <div
-            class="portfolio-img has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="1500"
-          >
-            <img src="images/portitem3.jpeg" alt="" />
+        <div class="container has-margin-bottom">
+          <div class="portfolio-item">
+            <div
+              class="portfolio-description has-margin-right"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <h1>Ruby on Rails</h1>
+              <h1>Two sided market place</h1>
+              <p>
+                Built a two sided marketplace called Greatdeal using Ruby on
+                Rails, where user can list item and user can buy item and paid
+                through the platform.
+              </p>
+              <a
+                href="https://greatdeal.herokuapp.com/"
+                target="_blank"
+                class="btn cta"
+                >view details
+                <span class="dots"><i class="fas fa-ellipsis-h"></i></span
+              ></a>
+            </div>
+            <div
+              class="portfolio-img"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <img src="images/ruby-market.png" alt="" />
+            </div>
           </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="1800"
-          >
-            <h6>Web Design</h6>
-            <h1>Product Sketch</h1>
-            <p>
-              Lorem Ipsum: usage Lorem ipsum is a pseudo-Latin text used in web
-              design, typography, layout, and printing in place
-            </p>
-            <a href="#" class="cta">view details</a>
+        </div>
+        <div class="container">
+          <div class="portfolio-item">
+            <div
+              class="portfolio-img has-margin-right"
+              data-aos="fade-right"
+              data-aos-delay="450"
+            >
+              <img src="images/js_add_item.png" alt="" />
+            </div>
+            <div
+              class="portfolio-description"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              <h1>Javascripts</h1>
+              <h1>Add to do task</h1>
+              <p>
+                simple add and remove task using vanilla Javascripts
+              </p>
+              <a
+                href="https://patriciapavia.github.io/js_add_remove_task/"
+                target="_blank"
+                class="btn cta"
+                >view details
+                <span class="dots"><i class="fas fa-ellipsis-h"></i></span
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -220,30 +225,25 @@
     <section class="experience" id="experience">
       <div class="conainer">
         <div class="section-heading">
-          <h1>Work experience</h1>
-          <h6>Past and current job</h6>
+          <h1>My Journey As Dev</h1>
         </div>
         <div class="timeline" data-aos="fade-down" data-aos-delay="300">
           <ul>
-            <li class="date" data-date="2011 - present">
-              <h1>Google</h1>
-              <p>
-                Lorem Ipsum: usage Lorem ipsum is a pseudo-Latin text used in
-                web design, typography, layout, and printing in place
+            <li class="date" data-date="2020-April - August">
+              <h1 data-aos="fade-right" data-aos-delay="300">
+                Student at Coder Academy
+              </h1>
+              <p data-aos="fade-left" data-aos-delay="300">
+                Start my journey at coding bootcamp at coder acadamy Sydney,
+                Australia
               </p>
             </li>
-            <li class="date" data-date="2008 - 2011">
-              <h1>Facebook</h1>
-              <p>
-                Lorem Ipsum: usage Lorem ipsum is a pseudo-Latin text used in
-                web design, typography, layout, and printing in place
-              </p>
-            </li>
-            <li class="date" data-date="2002 - 2007">
-              <h1>Microsoft</h1>
-              <p>
-                Lorem Ipsum: usage Lorem ipsum is a pseudo-Latin text used in
-                web design, typography, layout, and printing in place
+            <li class="date" data-date="2020- present">
+              <h1 data-aos="fade-right" data-aos-delay="300">
+                Future Employer
+              </h1>
+              <p data-aos="fade-down" data-aos-delay="300">
+                Hope to add your company on my work experience
               </p>
             </li>
           </ul>
@@ -256,55 +256,39 @@
         <div class="section-heading">
           <h1>contact</h1>
           <h6>Let's work together</h6>
+          <div class="social-media">
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/patricia-pavia-1477431a3/"
+                  target="_blank"
+                  class="icon-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/home?lang=en"
+                  target="_blank"
+                  class="icon-link"
+                >
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://gist.github.com/Patriciapavia"
+                  target="_blank"
+                  class="icon-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <form action="#" data-aos="fade-up" data-aos-delay="300">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name...."
-            required
-          />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email...."
-            required
-          />
-          <label for="service">Service:</label>
-          <select name="service" id="service">
-            <option value="">Web Design</option>
-            <option value="">Web Development</option>
-            <option value="">Web Design/Development</option>
-          </select>
-          <label for="subject">Subject:</label>
-          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-
-      <div class="social-media">
-        <ul class="nav-list">
-          <li>
-            <a href="#" class="icon-link">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon-link">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon-link">
-              <i class="fab fa-dribbble-square"></i>
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
 
