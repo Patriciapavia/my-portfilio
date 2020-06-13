@@ -270,46 +270,31 @@ li {
 /*End about*/
 
 /*Start services*/
-
-.my-skills {
-  margin-top: 10rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2.5rem;
+.skills {
+  width: 100%;
+  height: 70vh;
+  align-items: center;
   text-align: center;
 }
+.my-skill {
+  position: absolute;
+  left: 30%;
+  height: 60vh;
+  padding: 7rem;
 
-.skill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  box-shadow: 5px 5px 5px 5px #939393;
+}
+.my-skill li {
+  margin: 1rem;
+  font-size: 3rem;
+  list-style: none;
+  font-weight: 300;
 }
 
-.skill h1 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 2rem -2px 2rem 0;
+.my-skill h6 {
+  margin: 2rem 0;
+  font-size: 2rem;
 }
-
-.icon-container {
-  width: 10rem;
-  height: 10rem;
-  border: 3px solid #ffe838;
-  background-color: #fd57bf;
-  margin-bottom: 2rem;
-  display: flex;
-  transform: rotate(45deg);
-}
-
-.icon-container i {
-  color: #ffe838;
-  font-size: 5rem;
-  margin: auto;
-  transform: rotate(-45deg);
-}
-
 /*End services*/
 
 /*Start portfolio*/
