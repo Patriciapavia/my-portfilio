@@ -59,7 +59,7 @@
     <section class="about" id="about">
       <div class="container">
         <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-          <img src="images/my-img.jpg" alt="" />
+          <img src="images/my-img1.png" alt="" style="width: 400px;" />
         </div>
         <div class="about-details" data-aos="fade-left" data-aos-delay="600">
           <div class="about-heading">
@@ -104,7 +104,7 @@
               <br />
               <h6>Languages I speak:</h6>
 
-              <p>HTML,CSS, Javascripts</p>
+              <p>HTML,CSS, Javascripts, Ruby</p>
               <h6>Dev Tools:</h6>
               <ul>
                 <li>VS code</li>
@@ -118,6 +118,33 @@
       </div>
     </section>
     <section class="portfolio" id="portfolio">
+      <div class="tab">
+        <button class="tablinks" onclick="openTap(event, 'html')">
+          HTML/CSS
+        </button>
+        <button class="tablinks" onclick="openTap(event, 'ruby')">
+          Ruby on rails
+        </button>
+        <button class="tablinks" onclick="openTap(event, 'js')">
+          javascrips
+        </button>
+      </div>
+
+      <div id="html" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="ruby" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+      <div id="js" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
       <div class="conainer">
         <div class="section-heading">
           <h1>Portfolio</h1>
