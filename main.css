@@ -617,7 +617,7 @@ li {
     width: 70%;
     position: absolute;
     left: 15%;
-    height: 80vh;
+    height: 100vh;
     box-shadow: 5px 5px 5px 5px #939393;
   }
   .my-skill li {
@@ -630,7 +630,7 @@ li {
   }
 
   .my-skill li {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .profile-img {
     margin: 0 0 7rem 0;
@@ -646,15 +646,15 @@ li {
     justify-content: center;
   }
 
-  .portfolio-item:last-child {
-    margin-bottom: 0;
-  }
-
   .portfolio-img {
+    text-align: center;
+    align-items: center;
     width: 100%;
   }
   .portfolio-description {
     width: 100%;
+    text-align: center;
+    align-items: center;
   }
 
   .portfolio-description h6 {
