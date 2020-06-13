@@ -12,7 +12,8 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("images/sitebg.jpg") no-repeat center fixed;
+  background: -webkit-linear-gradient(360deg, #224e4d 10%, #083023 360%);
+  background: linear-gradient(360deg, #224e4d 10%, #083023 360%);
   background-size: cover;
 }
 
@@ -96,17 +97,18 @@ section {
 header {
   width: 100%;
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .top-nav {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
+  position: absolute;
+  left: 80%;
+  width: 50%;
+  height: 50vh;
   top: -100vh;
   z-index: 1;
-  background-color: #16162d;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
+  background-color: #224e4d;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
@@ -115,8 +117,7 @@ header {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 li {
@@ -195,13 +196,12 @@ li {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  z-index: 1;
 }
 
 .landing-text h1 {
   font-size: 18rem;
   font-family: "Dancing Script", cursive, san-serif;
-  background: linear-gradient(to top, #ffe838, #fd57bf);
+  background: linear-gradient(to top, #ffe838, #ea4c89);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;
@@ -209,7 +209,11 @@ li {
 }
 
 .landing-text h6 {
-  font-size: 2rem;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.landing-text p {
+  font-size: 3rem;
   font-weight: 300;
 }
 /*End header*/
