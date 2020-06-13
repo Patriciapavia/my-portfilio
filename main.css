@@ -593,8 +593,18 @@ li {
   .timeline .date::before {
     font-size: 1.4rem;
   }
-  .form {
-    width: 100%;
+  .timeline-heading h1 {
+    font-size: 4rem;
+  }
+
+  .timeline .date::after {
+    left: -8rem;
+  }
+
+  .social-media {
+    position: absolute;
+    left: 24%;
+    margin-top: 5rem;
   }
   .up {
     right: 2rem;
