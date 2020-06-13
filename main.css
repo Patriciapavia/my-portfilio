@@ -38,7 +38,7 @@ section {
 
 /*Start reusable*/
 .container {
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -83,10 +83,6 @@ section {
   font-size: 3rem;
 
   font-weight: 300;
-}
-
-.has-margin-right {
-  margin-right: 5rem;
 }
 
 /*End reusable*/
@@ -253,7 +249,7 @@ li {
   content: "";
   position: absolute;
   width: inherit;
-  max-width: 400px;
+  max-width: 330px;
   height: inherit;
   top: 0;
   background-color: rgba(30, 130, 76, 0.2);
@@ -300,8 +296,6 @@ li {
 .portfolio-item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .has-margin-bottom {
@@ -312,13 +306,15 @@ li {
   margin-bottom: 0;
 }
 
-.portfolio-img {
-  width: 50%;
-}
 .portfolio-description {
   width: 45%;
   margin-right: 5rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 3rem;
+  position: relative;
+  margin: auto;
 }
 
 .portfolio-description h6 {
@@ -553,6 +549,12 @@ li {
     align-items: center;
   }
 
+  .portfolio-description {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
   .about-heading h1 {
     font-size: 6rem;
   }
@@ -603,6 +605,10 @@ li {
 
   .about .container {
     flex-direction: column;
+  }
+
+  .profile-img {
+    align-items: center;
   }
 
   .profile {
