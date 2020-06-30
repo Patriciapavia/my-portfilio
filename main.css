@@ -7,16 +7,16 @@
 html {
   font-size: 10px;
   font-family: "Roboto" sans-serif;
-  color: #eee;
+  color: #313534;
+}
+.color {
+  color: #008b8b;
 }
 body {
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(360deg, #224e4d 10%, #083023 360%);
-  background: linear-gradient(360deg, #224e4d 10%, #083023 360%);
-  background-size: cover;
+  background-color: #fff;
 }
-
 a {
   text-decoration: none;
   color: #eee;
@@ -98,16 +98,18 @@ header {
 
 .top-nav {
   position: absolute;
-  left: 80%;
-  height: 50vh;
+  width: 100%;
+  height: 70vh;
   top: -100vh;
   z-index: 1;
-  background-color: #224e4d;
+  background-color: #008b8b;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
 .nav-list {
+  align-items: center;
   list-style: none;
+  line-height: 6rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -126,16 +128,18 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(to top, #ffe838, #ea4c89);
+  background: linear-gradient(to top, #fff, #939393);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .top-nav.open {
   top: 0;
-  border-bottom-left-radius: 150%;
-  border-bottom-right-radius: 0%;
-  padding-left: 15rem;
+  width: 100%;
+
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  padding: 15rem;
 }
 .menu-toggler {
   position: absolute;
@@ -192,15 +196,51 @@ li {
   width: 100%;
   text-align: center;
 }
+/*card info section */
 
-.landing-text h1 {
-  font-size: 18rem;
-  font-family: "Dancing Script", cursive, san-serif;
-  background: linear-gradient(to top, #ffe838, #ea4c89);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 1rem;
-  user-select: none;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.icon-link {
+  font-size: 40px;
+  background-color: #16162d;
+}
+.fa-linkedin {
+  background-color: #0e76e8;
+}
+.fa-twitter-square {
+  background-color: #0e76e8;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
 }
 
 .landing-text h6 {
@@ -214,7 +254,10 @@ li {
 /*End header*/
 
 /*Start about*/
-
+#about {
+  background-color: #008b8b;
+  color: #fff;
+}
 .about .container {
   display: flex;
   align-items: center;
@@ -239,7 +282,7 @@ li {
 .profile-img {
   width: 100%;
   height: 40vh;
-  background-image: url("./images/my-img1.png");
+  background-image: url("./images/computer.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
@@ -249,7 +292,7 @@ li {
   content: "";
   position: absolute;
   width: inherit;
-  max-width: 330px;
+  max-width: 680px;
   height: inherit;
   top: 0;
   background-color: rgba(30, 130, 76, 0.2);
@@ -258,10 +301,12 @@ li {
 
 .my-profiles {
   display: flex;
+
   flex-wrap: wrap;
 }
 .profile {
-  width: 50%;
+  margin: 0 4rem;
+  width: 40%;
 }
 
 /*End about*/
@@ -422,30 +467,6 @@ li {
 .contact {
   background: -webkit-linear-gradient(360deg, #224e4d 10%, #083023 360%);
   background: linear-gradient(360deg, #224e4d 10%, #083023 360%);
-}
-
-.social-media {
-  position: absolute;
-  left: 43%;
-  margin-top: 5rem;
-}
-.social-list {
-  display: flex;
-  flex-direction: row;
-}
-.social-media i {
-  font-size: 5rem;
-  transition: color 650ms;
-}
-
-.fa-facebook-square:hover {
-  color: #4267b2;
-}
-.fa-twitter-square:hover {
-  color: #38a1f4;
-}
-.fa-dribbble-square:hover {
-  color: #ea4c89;
 }
 
 /*End contact*/
