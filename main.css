@@ -51,7 +51,7 @@ section {
 }
 .section-heading h1 {
   font-size: 5.5rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #ccc;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -200,7 +200,7 @@ li {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -286,13 +286,14 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
+  margin-right: 10rem;
 }
 
 .profile-img::before {
   content: "";
   position: absolute;
   width: inherit;
-  max-width: 680px;
+  max-width: 750px;
   height: inherit;
   top: 0;
   background-color: rgba(30, 130, 76, 0.2);
@@ -305,7 +306,7 @@ a:hover {
   flex-wrap: wrap;
 }
 .profile {
-  margin: 0 4rem;
+  justify-content: space-around;
   width: 40%;
 }
 
@@ -317,11 +318,13 @@ a:hover {
   height: 70vh;
 }
 .my-skill {
+  background-color: #008b8b;
   width: 50%;
   position: absolute;
   left: 25%;
   height: 60vh;
   box-shadow: 5px 5px 5px 5px #939393;
+  color: #fff;
 }
 .my-skill li {
   margin: 1rem;
@@ -337,7 +340,19 @@ a:hover {
 /*End services*/
 
 /*Start portfolio*/
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.project {
+  width: 50%;
+  justify-content: space-around;
+}
+
+/* .portfolio-item img {
+  width: 400px;
+}
 .portfolio-item {
   display: flex;
   flex-wrap: wrap;
@@ -352,13 +367,7 @@ a:hover {
 }
 
 .portfolio-description {
-  width: 45%;
-  margin-right: 5rem;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  padding: 3rem;
-  position: relative;
+  
   margin: auto;
 }
 
@@ -396,7 +405,7 @@ a:hover {
   font-size: 2.4rem;
   margin-left: 0.5rem;
   opacity: 0.75;
-}
+} */
 /*End services*/
 
 /*Start timeline*/
