@@ -341,7 +341,8 @@ a:hover {
   margin-bottom: 4rem;
   justify-content: space-between;
 }
-.project p {
+.project p,
+.project h1 {
   color: #000;
 }
 .project:not(:last-child) {
