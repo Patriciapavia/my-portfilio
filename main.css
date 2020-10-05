@@ -135,7 +135,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #777;
+  color: #555;
 }
 
 .top-nav.open {
@@ -252,7 +252,8 @@ li {
 .profile:not(:last-child) {
   margin-right: 10rem;
 }
-.profile p {
+.profile p,
+.profile h2 {
   font-size: 2rem;
 }
 /*End about*/
@@ -271,6 +272,7 @@ li {
 
 .tablink {
   background-color: #fefefe;
+  font-family: "Roboto", sans-serif;
   color: #ff9595;
   border: none;
   outline: none;
@@ -349,6 +351,7 @@ li {
 /*Start contact*/
 .contact {
   background-image: url("./images/5.png");
+  font-family: "Roboto", sans-serif;
 }
 .contact h3 {
   font-size: 3rem;
@@ -359,6 +362,7 @@ li {
 /*Start footer*/
 
 .copyright {
+  font-family: "Roboto", sans-serif;
   width: 100%;
   color: #083023;
   text-align: center;
@@ -439,7 +443,9 @@ li {
     width: 100%;
     height: 90vh;
   }
-  .landing h1 {
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #ff9595;
   }
 }
 
