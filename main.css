@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 /*Start global*/
 * {
   margin: 0;
@@ -6,7 +7,7 @@
 }
 html {
   font-size: 10px;
-  font-family: "Roboto" sans-serif;
+  font-family: "roboto" sans-serif;
   color: #313534;
 }
 
@@ -14,6 +15,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #fff;
+  font-family: "Roboto" sans-serif;
 }
 a {
   text-decoration: none;
@@ -32,7 +34,7 @@ section {
   padding: 6rem 0;
 }
 a:hover {
-  box-shadow: 0px 10px 30px #ffe838;
+  box-shadow: 0px 10px 30px #fefefe;
 }
 i:hover {
   background-color: #555;
@@ -99,6 +101,7 @@ header {
   background-image: url(./images/1.png);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
 }
 
 .top-nav {
@@ -132,9 +135,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(to top, #ffe838, #ea4c89);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #777;
 }
 
 .top-nav.open {
@@ -192,11 +193,14 @@ li {
 }
 
 /* start landing */
+.landing {
+  padding-top: 20rem;
+}
 .landing h1 {
   font-size: 8rem;
+  font-family: "roboto";
   color: #fefefe;
   text-align: center;
-  padding: 270px 0 0 0;
 }
 .landing h3 {
   font-size: 3.5rem;
@@ -206,76 +210,12 @@ li {
 
 /* end landing */
 
-/* .landing-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-.icon-link {
-  font-size: 40px;
-  background-color: #16162d;
-}
-.fa-linkedin {
-  background-color: #0e76e8;
-}
-.fa-twitter-square {
-  background-color: #0e76e8;
-}
-a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-}
-
-button:hover,
-a:hover {
-  opacity: 0.7;
-}
-
-.landing-text h6 {
-  font-size: 4rem;
-  font-weight: 300;
-}
-.landing-text p {
-  font-size: 3rem;
-  font-weight: 300;
-} */
-/*End header*/
-
 /*Start about*/
 .about {
   background-image: url("./images/2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Roboto", sans-serif;
 
   color: #fefefe;
 }
@@ -317,41 +257,11 @@ a:hover {
 }
 /*End about*/
 
-/*Start services*/
-
-/* .services {
-  background-image: url("./images/3.png");
-}
-.skills {
-  width: 100%;
-  height: 70vh;
-}
-.my-skill {
-  background-color: #008b8b;
-  width: 50%;
-  position: relative;
-  margin: auto;
-  height: 60vh;
-  box-shadow: 5px 5px 5px 5px #939393;
-  color: #fff;
-}
-.my-skill li {
-  margin: 1rem;
-  font-size: 3rem;
-  list-style: none;
-  font-weight: 300;
-}
-
-.my-skill h6 {
-  margin: 2rem 0;
-  font-size: 2rem; 
-}*/
-/*End services*/
-
 /*Start portfolio*/
 
 .portfolio {
   background-color: #ff9595;
+  font-family: "Roboto", sans-serif;
 }
 
 .portfolio h3 {
@@ -406,75 +316,43 @@ a:hover {
   height: 100%;
 }
 
-/*Start timeline*/
-.experience {
-  background-color: #313534;
-  margin-bottom: 5rem;
-}
-.timeline ul {
-  border-left: 4px solid #ffe838;
-  border-radius: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.05);
-  margin: auto;
-  position: relative;
-  padding: 5rem;
-  list-style: none;
-  text-align: left;
-  width: 70%;
-}
-
-.timeline h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  opacity: 0.3;
-}
-
-.timeline .date {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+/* overlay  */
+.container-overlay {
   position: relative;
 }
 
-.timeline .date:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
-}
-
-.timeline .date::before,
-.timeline .date::after {
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
   position: absolute;
-  display: block;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container-overlay:hover .image {
+  opacity: 0.3;
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1b1b1);
 }
 
-.timeline .date::before {
-  content: attr(data-date);
-  left: -21rem;
-  text-align: right;
-  min-width: 12rem;
-  font-size: 1.5rem;
+.container-overlay:hover .overlay {
+  opacity: 1;
 }
 
-.timeline .date::after {
-  content: "";
-  box-shadow: 0 0 0 4px #fd57bf;
-  border-radius: 100%;
-  left: -8rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-color: #313534;
+.text {
+  background-color: #fefefe;
+  color: #777;
+  font-size: 16px;
+  padding: 16px 32px;
 }
-
-/*End timeline*/
-
 /*Start contact*/
-.contact h6 {
-  color: #313534;
+.contact {
+  background-image: url("./images/5.png");
+}
+.contact h3 {
+  font-size: 3rem;
+  color: #fefefe;
 }
 /*End contact*/
 
@@ -537,48 +415,6 @@ a:hover {
 
 /*End animations*/
 
-/*Start media queries*/
-
-/* @media screen and (max-width: 768px) {
-  .profile {
-    width: 100%;
-    margin-bottom: 8rem;
-  }
-  .profile img {
-    width: 500px;
-  }
-  .my-profiles {
-    width: 100%;
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .profile {
-    width: 100%;
-  }
-  .my-skill {
-    width: 100%;
-    position: relative;
-    margin: auto;
-  }
-
-  .projects {
-    position: relative;
-    margin: auto;
-    width: 100%;
-  }
-
-  .project {
-    width: 100%;
-    margin-bottom: 4rem;
-  }
-
-  .profile img {
-    width: 500px;
-  }
-} */
-
 @media screen and (min-width: 1250px) {
   .top-nav {
     position: initial;
@@ -604,7 +440,6 @@ a:hover {
     height: 90vh;
   }
   .landing h1 {
-    padding-top: 200px;
   }
 }
 
@@ -614,7 +449,6 @@ a:hover {
     height: 80vh;
   }
   .landing h1 {
-    padding-top: 200px;
     font-size: 6rem;
   }
   .landing h3 {
@@ -638,3 +472,4 @@ a:hover {
     flex: 100%;
   }
 }
+/*end media queries*/
