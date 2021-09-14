@@ -127,15 +127,17 @@
 				</h3>
 			</div>
 			<div class="container">
-				<button class="tablink" onclick="openPage('React', this)">REACT</button>
+				<button
+					class="tablink"
+					onclick="openPage('React', this)"
+					id="defaultOpen"
+				>
+					REACT
+				</button>
 				<button class="tablink" onclick="openPage('Javascript', this)">
 					React Native
 				</button>
-				<button
-					class="tablink"
-					onclick="openPage('HTML', this)"
-					id="defaultOpen"
-				>
+				<button class="tablink" onclick="openPage('HTML', this)">
 					HTML/CSS
 				</button>
 			</div>
@@ -145,7 +147,7 @@
 						class="flex-item-left container-overlay"
 						data-aos="fade-right"
 						data-aos-delay="100"
-          >
+					>
 						<div class="overlay">
 							<div class="text">
 								Portfolio website using HTML, CSS, Jquery, Bootstrap.
